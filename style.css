@@ -1654,3 +1654,81 @@ body {
   }
 }
 
+/* =====================================
+   FINAL RESPONSIVE FIX
+===================================== */
+
+@media (max-width: 1024px) {
+  .page {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .hero__top,
+  .hero__intro,
+  .experience,
+  .project-content,
+  .articles,
+  .concepts,
+  .achievements-block,
+  .contacts-final__content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-slider,
+  .concepts-gallery {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .project-slider__track img,
+  .concepts-gallery img {
+    width: auto;
+    max-width: none;
+  }
+
+  .concepts-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .achievement-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .achievement-desc {
+    display: none;
+  }
+
+  .achievement-name,
+  .achievement-name span,
+  .achievement-name .link-text {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .contacts-final__collage {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.mobile-menu__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobile-menu__link img {
+  width: 16px;
+  height: 16px;
+}
