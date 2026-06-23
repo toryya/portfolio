@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кулешова Виктория — Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="sticky-menu" id="stickyMenu">
+    <div class="sticky-menu__inner">
+
+      <a href="#" class="sticky-menu__avatar" aria-label="Наверх">
+        <img src="assets/avatar.png" alt="">
+      </a>
+
+      <nav class="sticky-menu__nav">
+        <a href="#experience" class="sticky-menu__link" data-section="experience">Опыт</a>
+        <a href="#projects" class="sticky-menu__link" data-section="projects">Проекты</a>
+        <a href="#articles" class="sticky-menu__link" data-section="articles">Статьи</a>
+        <a href="#concepts" class="sticky-menu__link" data-section="concepts">Концепты</a>
+        <a href="#achievements" class="sticky-menu__link" data-section="achievements">Достижения</a>
+        <a href="#contacts" class="sticky-menu__link" data-section="contacts">Контакты</a>
+      </nav>
+
+      <div class="sticky-menu__buttons">
+        <a class="pill" href="https://drive.google.com/file/d/1_HFvZs7TMibN1lBJT3R0KZXLHbGkVKRL/view?usp=sharing"
+          target="_blank">
+          CV <img class="pill__icon" src="assets/arrow-narrow-up-right.svg" alt="">
+        </a>
+
+        <a class="pill" href="#" target="_blank">
+          Telegram <img class="pill__icon" src="assets/arrow-narrow-up-right.svg" alt="">
+        </a>
+
+        <a class="pill" href="#" target="_blank">
+          Linkedin <img class="pill__icon" src="assets/arrow-narrow-up-right.svg" alt="">
+        </a>
+      </div>
+
+      <button class="sticky-menu__burger" id="stickyBurger" aria-label="Открыть меню">
+        <img src="assets/menu-01.svg" alt="">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="sticky-menu__mobile" id="stickyMobileMenu">
+        <a href="#experience">Опыт</a>
+        <a href="#projects">Проекты</a>
+        <a href="#articles">Статьи</a>
+        <a href="#concepts">Концепты</a>
+        <a href="#achievements">Достижения</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="page">
+
+    <!-- ============ БЛОК: HERO (хедер + имя + опыт) ============ -->
+    <section class="hero">
+
+      <!-- Верхняя строка: аватар + соц-кнопки (desktop) / аватар + бургер (mobile) -->
+      <div class="hero__top">
+        <div class="avatar">
+          <img src="assets/avatar.png" alt="Виктория Кулешова">
+        </div>
+
+        <!-- Desktop: pill-навигация -->
+        <nav class="pillnav">
+          <a class="pill" href="https://drive.google.com/file/d/1_HFvZs7TMibN1lBJT3R0KZXLHbGkVKRL/view?usp=sharing"
+            target="_blank" rel="noopener">
+            <span>CV</span>
+            <svg class="pill__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="#262626" stroke-width="1.3" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a class="pill" href="https://t.me/vktorriaa" target="_blank" rel="noopener">
+            <span>Telegram</span>
+            <svg class="pill__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="#262626" stroke-width="1.3" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a class="pill" href="https://www.linkedin.com/in/vika-kuleshova-b618aa413" target="_blank" rel="noopener">
+            <span>Linkedin</span>
+            <svg class="pill__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="#262626" stroke-width="1.3" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </nav>
+
+        <!-- Mobile: бургер + dropdown -->
+        <div class="burger-wrap">
+          <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+            <img src="assets/menu-01.svg" alt="">
+          </button>
+
+          <nav class="mobile-menu" id="mobileMenu">
+            <a class="mobile-menu__link" href="#experience">Опыт</a>
+            <a class="mobile-menu__link" href="#projects">Проекты</a>
+            <a class="mobile-menu__link" href="#achievements">Достижения</a>
+            <a class="mobile-menu__link" href="#contacts">Контакты</a>
+            <div class="mobile-menu__divider"></div>
+            <a class="mobile-menu__link" href="#" target="_blank" rel="noopener">CV ↗</a>
+            <a class="mobile-menu__link" href="#" target="_blank" rel="noopener">Telegram ↗</a>
+            <a class="mobile-menu__link" href="#" target="_blank" rel="noopener">Linkedin ↗</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Mobile-only: соц-кнопки отдельным рядом под описанием -->
+      <nav class="pillnav pillnav--mobile">
+        <a class="pill" href="#" target="_blank" rel="noopener">
+          <span>CV</span>
+          <svg class="pill__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="#262626" stroke-width="1.3" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a class="pill" href="#" target="_blank" rel="noopener">
+          <span>Telegram</span>
+          <svg class="pill__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="#262626" stroke-width="1.3" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a class="pill" href="#" target="_blank" rel="noopener">
+          <span>Linkedin</span>
+          <svg class="pill__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="#262626" stroke-width="1.3" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </nav>
+
+      <!-- Имя, роль, описание -->
+      <div class="hero__intro">
+        <p class="label">Кулешова Виктория</p>
+        <div class="hero__text">
+          <p class="text">Product Designer · B2B, B2C, Medtech, Foodtech</p>
+          <p class="text hero__desc">Работаю с веб и мобильными продуктами от ранней идеи до запуска с фокусом на визуал
+            и понятный пользовательский опыт.</p>
+        </div>
+      </div>
+
+      <!-- Опыт -->
+      <div class="experience" id="experience">
+        <p class="label">Опыт</p>
+        <div class="experience__list">
+
+          <a class="experience__row link-with-arrow" href="https://soma-lab.ru/" target="_blank" rel="noopener">
+            <div class="experience__company">
+              <span class="company-icon company-icon--somalab">
+                <img src="assets/somalab.png" alt="Somalab" width="22" height="22">
+              </span>
+              <span class="text company-link">
+                Somalab
+                <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+              </span>
+            </div>
+            <span class="text text--muted">дек. 2024 г. — сейчас</span>
+          </a>
+
+          <div class="divider"></div>
+
+          <a class="experience__row link-with-arrow" href="https://shamps.dev/" target="_blank" rel="noopener">
+            <div class="experience__company">
+              <span class="company-icon company-icon--shamps">
+                <img src="assets/shampstech.png" alt="ШампсТех" width="22" height="22">
+              </span>
+              <span class="text company-link">
+                ШампсТех
+                <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+              </span>
+            </div>
+            <span class="text text--muted">март 2024 — август 2025</span>
+          </a>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- ============ /БЛОК: HERO ============ -->
+
+    <section class="project" id="projects">
+
+      <div class="project-slider" id="projectSlider" data-speed="0.6">
+        <div class="project-slider__track">
+          <img src="assets/polechat/1.png" alt="">
+          <img src="assets/polechat/2.png" alt="">
+          <img src="assets/polechat/3.png" alt="">
+          <img src="assets/polechat/4.png" alt="">
+          <img src="assets/polechat/5.png" alt="">
+          <img src="assets/polechat/6.png" alt="">
+          <img src="assets/polechat/7.png" alt="">
+          <img src="assets/polechat/8.png" alt="">
+
+          <img src="assets/polechat/1.png" alt="">
+          <img src="assets/polechat/2.png" alt="">
+          <img src="assets/polechat/3.png" alt="">
+          <img src="assets/polechat/4.png" alt="">
+          <img src="assets/polechat/5.png" alt="">
+          <img src="assets/polechat/6.png" alt="">
+          <img src="assets/polechat/7.png" alt="">
+          <img src="assets/polechat/8.png" alt="">
+        </div>
+      </div>
+
+      <div class="project-content">
+
+        <div class="project-info">
+          <a href="polechat.html" class="project-title link-with-arrow">
+            <span class="link-text">Полечат — телемедицинский сервис</span>
+
+            <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+
+          <p class="project-description">
+            Возглавила проектирование с нуля B2B2C-сервиса для легальных медицинских консультаций в связи с запретом
+            переписок в мессенджерах. Спроектировала два приложения и админ-панель. Продумывала пользовательские флоу,
+            логику взаимодействия между врачом и пациентом и все ключевые сценарии.
+          </p>
+        </div>
+
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <span>App Store · Doctor App</span>
+            <img src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+
+          <a href="#" class="project-link">
+            <span>App Store · Patient App</span>
+            <img src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+
+          <a href="#" class="project-link">
+            <span>Website</span>
+            <img src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+        </div>
+
+        <div class="project-stats">
+          <div class="project-stat">
+            <span>Ускорила ответ врача</span>
+            <span>на 42%</span>
+          </div>
+
+          <div class="project-stat">
+            <span>Статус</span>
+            <span>пилот в 2х клиниках</span>
+          </div>
+
+          <div class="project-stat">
+            <span>Экранов</span>
+            <span>260+</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="project">
+
+      <div class="project-slider project-slider--wide" id="dishdashSlider" data-speed="0.6">
+        <div class="project-slider__track">
+          <img src="assets/dishdash/1_dishdash.png" alt="">
+          <img src="assets/dishdash/2_dishdash.png" alt="">
+          <img src="assets/dishdash/3_dishdash.png" alt="">
+          <img src="assets/dishdash/4_dishdash.png" alt="">
+          <img src="assets/dishdash/5_dishdash.png" alt="">
+
+          <img src="assets/dishdash/1_dishdash.png" alt="">
+          <img src="assets/dishdash/2_dishdash.png" alt="">
+          <img src="assets/dishdash/3_dishdash.png" alt="">
+          <img src="assets/dishdash/4_dishdash.png" alt="">
+          <img src="assets/dishdash/5_dishdash.png" alt="">
+        </div>
+      </div>
+
+      <div class="project-content">
+
+        <div class="project-info">
+          <a href="dishdash.html" class="project-title link-with-arrow">
+            <span class="link-text">Редизайн DishDash — «ресторанный Тиндер» для компаний</span>
+            <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+
+          <p class="project-description">
+            Редизайнила foodtech-приложение для совместного выбора заведений, переработав пользовательские сценарии,
+            визуальный стиль и механику взаимодействия.
+          </p>
+        </div>
+
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <span>Open App</span>
+            <img src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+        </div>
+
+        <div class="project-stats">
+          <div class="project-stat">
+            <span>Retention</span>
+            <span>12% → 48%</span>
+          </div>
+
+          <div class="project-stat">
+            <span>Новые пользователи</span>
+            <span>1.94K</span>
+          </div>
+
+          <div class="project-stat">
+            <span>Совместные выборы</span>
+            <span>2.5K+</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="articles" id="articles">
+
+      <p class="articles-title">Статьи</p>
+
+      <div class="articles-list">
+
+        <a href="article-dishdash-redesign.html" class="article-row link-with-arrow">
+          <span class="article-name link-text">
+            Как мы редизайнили DishDash
+
+            <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+          </span>
+
+          <span class="article-date">04.06</span>
+        </a>
+
+        <a href="article-dishdash-redesign.html" class="article-row link-with-arrow">
+          <span class="article-name link-text">
+            Что хакатоны дали мне как продуктовому дизайнеру
+
+            <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+          </span>
+
+          <span class="article-date">12.05</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="concepts" id="concepts">
+
+      <div class="concepts-content">
+
+        <p class="concepts-title">Концепты</p>
+
+        <div class="concepts-gallery">
+          <img src="assets/concepts/concept1.png" alt="">
+          <img src="assets/concepts/concept2.png" alt="">
+          <img src="assets/concepts/concept3.png" alt="">
+        </div>
+
+      </div>
+
+      <a href="#" class="concepts-button">
+        <span class="concepts-button__text">
+          <img src="assets/lock-01.svg" alt="">
+          <span>Смотреть полностью</span>
+        </span>
+
+        <img src="assets/arrow-narrow-up-right.svg" alt="">
+      </a>
+
+    </section>
+
+    <section class="achievements-block" id="achievements">
+
+      <p class="achievements-title">Достижения</p>
+
+      <div class="achievements-list">
+
+        <a href="#" class="achievement-row link-with-arrow">
+          <span class="achievement-name">
+            <img src="assets/win.png" alt="">
+            <span class="link-text">
+              ВкусВилл x Технопарк ИТМО
+              <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+            </span>
+          </span>
+          <span class="achievement-desc">Хакатон Помоги Даркстору</span>
+        </a>
+
+        <a href="#" class="achievement-row link-with-arrow">
+          <span class="achievement-name">
+            <img src="assets/win.png" alt="">
+            <span class="link-text">
+              Hack&Change
+              <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+            </span>
+          </span>
+          <span class="achievement-desc">Хакатон от МТС</span>
+        </a>
+
+        <a href="#" class="achievement-row link-with-arrow">
+          <span class="achievement-name">
+            <img src="assets/win.png" alt="">
+            <span class="link-text">
+              Young&&Yandex x ИТМО
+              <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+            </span>
+          </span>
+          <span class="achievement-desc">Creative Space</span>
+        </a>
+
+        <a href="#" class="achievement-row link-with-arrow">
+          <span class="achievement-name">
+            <img src="assets/win.png" alt="">
+            <span class="link-text">
+              NOLABEL GROUP x ПИШ ИТМО
+              <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+            </span>
+          </span>
+          <span class="achievement-desc">Хакатон NoLabel competition</span>
+        </a>
+
+        <a href="#" class="achievement-row link-with-arrow">
+          <span class="achievement-name">
+            <img src="assets/win.png" alt="">
+            <span class="link-text">
+              NOLABEL GROUP x ПИШ ИТМО
+              <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+            </span>
+          </span>
+          <span class="achievement-desc">NoLabel Development Week</span>
+        </a>
+
+        <a href="#" class="achievement-row link-with-arrow">
+          <span class="achievement-name">
+            <img src="assets/money.png" alt="">
+            <span class="link-text">
+              Фонд содействия инновациям
+              <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+            </span>
+          </span>
+          <span class="achievement-desc">Грант «Студенческий стартап»</span>
+        </a>
+
+        <a href="#" class="achievement-row link-with-arrow">
+          <span class="achievement-name">
+            <img src="assets/medal.png" alt="">
+            <span class="link-text">
+              Государственная регистрация ПО
+              <img class="hover-arrow" src="assets/arrow-narrow-up-right.svg" alt="">
+            </span>
+          </span>
+          <span class="achievement-desc">Роспатент</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="contacts-final" id="contacts">
+
+      <div class="contacts-final__content">
+
+        <div class="contacts-final__info">
+          <p class="contacts-final__title">Контакты</p>
+
+          <p class="contacts-final__text">
+            Открыта к продуктовым командам, стартапам и интересным digital-проектам.
+          </p>
+        </div>
+
+        <div class="contacts-final__links">
+          <a href="#" class="contacts-final__link">
+            <span>Telegram</span>
+            <img src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+
+          <a href="#" class="contacts-final__link">
+            <span>Email</span>
+            <img src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+
+          <a href="#" class="contacts-final__link">
+            <span>Linkedin</span>
+            <img src="assets/arrow-narrow-up-right.svg" alt="">
+          </a>
+        </div>
+
+      </div>
+
+      <img class="contacts-final__collage" src="assets/collage.png" alt="">
+
+    </section>
+
+
+  </main>
+  <script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    burgerBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('is-open');
+      burgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.burger-wrap')) {
+        mobileMenu.classList.remove('is-open');
+        burgerBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+        burgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+  <script src="js/slider.js"></script>
+  <script src="js/navigation.js"></script>
+
+</body>
+
+<footer class="footer">
+  <span>© 2026</span>
+</footer>
+
+</html>
