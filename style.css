@@ -1732,3 +1732,41 @@ body {
   width: 16px;
   height: 16px;
 }
+
+@media (max-width: 1024px) {
+  .sticky-menu__mobile {
+    position: absolute;
+    top: 56px;
+    right: 20px;
+
+    width: 250px;
+    padding: 14px;
+
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+
+    background: #ffffff;
+    border: 0.8px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.10);
+  }
+
+  .sticky-menu__mobile.is-open {
+    display: flex;
+  }
+
+  .sticky-menu__mobile a {
+    padding: 8px 10px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    text-decoration: none;
+  }
+
+  .sticky-menu__mobile a:hover {
+    background: #f7f7f7;
+  }
+}

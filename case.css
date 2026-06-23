@@ -935,3 +935,43 @@
     background: transparent;
   }
 }
+
+@media (max-width: 1024px) {
+  .case-sticky-menu__links {
+    position: absolute;
+    top: 56px;
+    right: 20px;
+
+    width: 250px;
+    padding: 14px;
+
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+
+    background: #ffffff;
+    border: 0.8px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.10);
+  }
+
+  .case-sticky-menu__links.is-open {
+    display: flex;
+  }
+
+  .case-sticky-menu__pill {
+    display: flex !important;
+    justify-content: flex-start;
+    width: 100%;
+
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+  }
+
+  .case-sticky-menu__pill:hover {
+    background: #f7f7f7;
+    transform: none;
+  }
+}
