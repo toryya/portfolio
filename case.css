@@ -975,3 +975,71 @@
     transform: none;
   }
 }
+/* =====================================
+   CASE PAGES: CV / contacts reachable on every breakpoint
+===================================== */
+
+/* tablet 769–1024: header pills fit, sticky dropdown needs its toggle */
+@media (max-width: 1024px) {
+  .case-header .pillnav {
+    display: flex;
+  }
+
+  .case-menu-toggle {
+    width: 44px;
+    height: 40px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .case-menu-toggle img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+}
+
+/* mobile: name + switch in the first row, pills in the second */
+@media (max-width: 768px) {
+  .case-header {
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .case-header__actions {
+    display: contents;
+  }
+
+  .case-header .lang-switch {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .case-header .pillnav {
+    display: flex;
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  .case-sticky-menu__inner {
+    width: auto;
+    margin: 10px 24px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-sticky-menu__inner {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://viktoriakuleshova.ru/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://viktoriakuleshova.ru/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viktoriakuleshova.ru/en/"/>
+  </url>
+  <url>
+    <loc>https://viktoriakuleshova.ru/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://viktoriakuleshova.ru/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viktoriakuleshova.ru/en/"/>
+  </url>
+  <url>
+    <loc>https://viktoriakuleshova.ru/ru/polechat.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://viktoriakuleshova.ru/ru/polechat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viktoriakuleshova.ru/en/polechat.html"/>
+  </url>
+  <url>
+    <loc>https://viktoriakuleshova.ru/en/polechat.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://viktoriakuleshova.ru/ru/polechat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viktoriakuleshova.ru/en/polechat.html"/>
+  </url>
+  <url>
+    <loc>https://viktoriakuleshova.ru/ru/dishdash.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://viktoriakuleshova.ru/ru/dishdash.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viktoriakuleshova.ru/en/dishdash.html"/>
+  </url>
+  <url>
+    <loc>https://viktoriakuleshova.ru/en/dishdash.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://viktoriakuleshova.ru/ru/dishdash.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viktoriakuleshova.ru/en/dishdash.html"/>
+  </url>
+</urlset>

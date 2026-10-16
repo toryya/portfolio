@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://viktoriakuleshova.ru/sitemap.xml

@@ -1770,3 +1770,113 @@ body {
     background: #f7f7f7;
   }
 }
+/* =====================================
+   LANGUAGE SWITCH (RU / EN)
+===================================== */
+
+.hero__actions,
+.sticky-menu__actions,
+.case-header__actions,
+.case-sticky-menu__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  height: 38px;
+  padding: 3px;
+  gap: 2px;
+  border: 0.8px solid var(--color-border-pill);
+  border-radius: 100px;
+  background: #FFFFFF;
+}
+
+.lang-switch__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 100px;
+  font-family: var(--font-main);
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-switch__item:hover {
+  color: var(--color-text);
+}
+
+.lang-switch__item.is-active {
+  background: var(--color-text);
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.lang-switch__item:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+/* case header: keep the name on one line next to the switch */
+.case-header {
+  gap: 16px;
+}
+
+.case-header__name {
+  white-space: nowrap;
+}
+
+/* sticky mobile menu: external links with arrow */
+.sticky-menu__mobile a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sticky-menu__mobile a img {
+  width: 16px;
+  height: 16px;
+}
+
+.sticky-menu__mobile .mobile-menu__divider {
+  margin: 6px 4px;
+}
+
+/* =====================================
+   TABLET 769–1024: sticky menu fits the screen
+===================================== */
+
+@media (max-width: 1024px) {
+  .sticky-menu__inner {
+    width: auto;
+    margin: 10px 24px 0;
+  }
+
+  .sticky-menu__nav,
+  .sticky-menu__buttons {
+    display: none;
+  }
+
+  .sticky-menu__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 40px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 100px;
+    background: transparent;
+    cursor: pointer;
+  }
+}
